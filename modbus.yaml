@@ -1,0 +1,8 @@
+# Modbus configuration for Siemens PAC2200 Energy Monitoring Device
+- name: "siemens_pac2200"
+  type: tcp
+  host: 192.168.32.14
+  port: 502
+  delay: 5
+  sensors: !include modbus_pac2200.yaml
+  

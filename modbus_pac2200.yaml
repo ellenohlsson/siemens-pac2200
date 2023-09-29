@@ -1,0 +1,299 @@
+#####################################
+### VOLTAGE
+#####################################
+
+- name: "PAC2200 - Voltage L1N"
+  unique_id: PAC2200.U_L1N
+  unit_of_measurement: "V"
+  data_type: float32
+  precision: 2
+  device_class: voltage
+  address: 1
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Voltage L2N"
+  unique_id: PAC2200.U_L2N
+  unit_of_measurement: "V"
+  data_type: float32
+  precision: 2
+  device_class: voltage
+  address: 3
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Voltage L3N"
+  unique_id: PAC2200.U_L3N
+  unit_of_measurement: "V"
+  data_type: float32
+  precision: 2
+  device_class: voltage
+  address: 5
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Voltage L12"
+  unique_id: PAC2200.U_L12
+  unit_of_measurement: "V"
+  data_type: float32
+  precision: 2
+  device_class: voltage
+  address: 7
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Voltage L23"
+  unique_id: PAC2200.U_L23
+  unit_of_measurement: "V"
+  data_type: float32
+  precision: 2
+  device_class: voltage
+  address: 9
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Voltage L31"
+  unique_id: PAC2200.U_L31
+  unit_of_measurement: "V"
+  data_type: float32
+  precision: 2
+  device_class: voltage
+  address: 11
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+#####################################
+### CURRENT
+#####################################
+
+- name: "PAC2200 - Current L1"
+  unique_id: PAC2200.I_L1
+  unit_of_measurement: "A"
+  data_type: float32
+  precision: 2
+  device_class: current
+  address: 13
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Current L2"
+  unique_id: PAC2200.I_L2
+  unit_of_measurement: "A"
+  data_type: float32
+  precision: 2
+  device_class: current
+  address: 15
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Current L3"
+  unique_id: PAC2200.I_L3
+  unit_of_measurement: "A"
+  data_type: float32
+  precision: 2
+  device_class: current
+  address: 17
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Current N"
+  unique_id: PAC2200.I_N
+  unit_of_measurement: "A"
+  data_type: float32
+  precision: 2
+  device_class: current
+  address: 71
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+#####################################
+### POWER
+#####################################
+
+- name: "PAC2200 - Apparent Power L1"
+  unique_id: PAC2200.S_L1
+  unit_of_measurement: "VA"
+  data_type: float32
+  precision: 2
+  device_class: apparent_power
+  address: 19
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Apparent Power L2"
+  unique_id: PAC2200.S_L2
+  unit_of_measurement: "VA"
+  data_type: float32
+  precision: 2
+  device_class: apparent_power
+  address: 21
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Apparent Power L3"
+  unique_id: PAC2200.S_L3
+  unit_of_measurement: "VA"
+  data_type: float32
+  precision: 2
+  device_class: apparent_power
+  address: 23
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Active Power L1"
+  unique_id: PAC2200.P_L1
+  unit_of_measurement: "W"
+  data_type: float32
+  precision: 2
+  device_class: power
+  address: 25
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Active Power L2"
+  unique_id: PAC2200.P_L2
+  unit_of_measurement: "W"
+  data_type: float32
+  precision: 2
+  device_class: power
+  address: 27
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Active Power L3"
+  unique_id: PAC2200.P_L3
+  unit_of_measurement: "W"
+  data_type: float32
+  precision: 2
+  device_class: power
+  address: 29
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Reactive Power L1"
+  unique_id: PAC2200.Q_L1
+  unit_of_measurement: "var"
+  data_type: float32
+  precision: 2
+  device_class: reactive_power
+  address: 31
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Reactive Power L2"
+  unique_id: PAC2200.Q_L2
+  unit_of_measurement: "var"
+  data_type: float32
+  precision: 2
+  device_class: reactive_power
+  address: 33
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Reactive Power L3"
+  unique_id: PAC2200.Q_L3
+  unit_of_measurement: "var"
+  data_type: float32
+  precision: 2
+  device_class: reactive_power
+  address: 35
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Power Factor L1"
+  unique_id: PAC2200.PF_L1
+  data_type: float32
+  precision: 2
+  device_class: power_factor
+  address: 37
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Power Factor L2"
+  unique_id: PAC2200.PF_L2
+  data_type: float32
+  precision: 2
+  device_class: power_factor
+  address: 39
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Power Factor L3"
+  unique_id: PAC2200.PF_L3
+  data_type: float32
+  precision: 2
+  device_class: power_factor
+  address: 41
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Power Factor Sum"
+  unique_id: PAC2200.PF_Sum
+  data_type: float32
+  precision: 2
+  device_class: power_factor
+  address: 69
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+#####################################
+### MISC
+#####################################
+
+- name: "PAC2200 - Frequency"
+  unique_id: PAC2200.f
+  unit_of_measurement: "Hz"
+  data_type: float32
+  precision: 2
+  device_class: frequency
+  address: 55
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
