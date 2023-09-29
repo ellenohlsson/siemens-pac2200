@@ -202,6 +202,18 @@
   scan_interval: 60
   slave: 1
 
+- name: "PAC2200 - Active Power Sum"
+  unique_id: PAC2200.P_Sum
+  unit_of_measurement: "W"
+  data_type: float32
+  precision: 2
+  device_class: power
+  address: 65
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
 - name: "PAC2200 - Reactive Power L1"
   unique_id: PAC2200.Q_L1
   unit_of_measurement: "var"
@@ -277,6 +289,106 @@
   precision: 2
   device_class: power_factor
   address: 69
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+#####################################
+### ENERGY
+#####################################
+
+- name: "PAC2200 - Active Energy Import L1 T1"
+  unique_id: PAC2200.E_L1_Import
+  unit_of_measurement: "Wh"
+  data_type: float64
+  precision: 0
+  device_class: energy
+  address: 841
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Active Energy Import L2 T1"
+  unique_id: PAC2200.E_L2_Import
+  unit_of_measurement: "Wh"
+  data_type: float64
+  precision: 0
+  device_class: energy
+  address: 881
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Active Energy Import L3 T1"
+  unique_id: PAC2200.E_L3_Import
+  unit_of_measurement: "Wh"
+  data_type: float64
+  precision: 0
+  device_class: energy
+  address: 921
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Active Energy Import Sum T1"
+  unique_id: PAC2200.E_Sum_Import
+  unit_of_measurement: "Wh"
+  data_type: float64
+  precision: 0
+  device_class: energy
+  address: 801
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Active Energy Export L1 T1"
+  unique_id: PAC2200.E_L1_Export
+  unit_of_measurement: "Wh"
+  data_type: float64
+  precision: 0
+  device_class: energy
+  address: 849
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Active Energy Export L2 T1"
+  unique_id: PAC2200.E_L2_Export
+  unit_of_measurement: "Wh"
+  data_type: float64
+  precision: 0
+  device_class: energy
+  address: 889
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Active Energy Export L3 T1"
+  unique_id: PAC2200.E_L3_Export
+  unit_of_measurement: "Wh"
+  data_type: float64
+  precision: 0
+  device_class: energy
+  address: 929
+  input_type: input
+  state_class: measurement
+  scan_interval: 60
+  slave: 1
+
+- name: "PAC2200 - Active Energy Export Sum T1"
+  unique_id: PAC2200.E_Sum_Export
+  unit_of_measurement: "Wh"
+  data_type: float64
+  precision: 0
+  device_class: energy
+  address: 809
   input_type: input
   state_class: measurement
   scan_interval: 60
