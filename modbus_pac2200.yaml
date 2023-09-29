@@ -306,7 +306,7 @@
   device_class: energy
   address: 841
   input_type: input
-  state_class: measurement
+  state_class: total_increasing
   scan_interval: 60
   slave: 1
 
@@ -318,7 +318,7 @@
   device_class: energy
   address: 881
   input_type: input
-  state_class: measurement
+  state_class: total_increasing
   scan_interval: 60
   slave: 1
 
@@ -330,7 +330,7 @@
   device_class: energy
   address: 921
   input_type: input
-  state_class: measurement
+  state_class: total_increasing
   scan_interval: 60
   slave: 1
 
@@ -342,7 +342,7 @@
   device_class: energy
   address: 801
   input_type: input
-  state_class: measurement
+  state_class: total_increasing
   scan_interval: 60
   slave: 1
 
@@ -354,7 +354,7 @@
   device_class: energy
   address: 849
   input_type: input
-  state_class: measurement
+  state_class: total_increasing
   scan_interval: 60
   slave: 1
 
@@ -366,7 +366,7 @@
   device_class: energy
   address: 889
   input_type: input
-  state_class: measurement
+  state_class: total_increasing
   scan_interval: 60
   slave: 1
 
@@ -378,7 +378,7 @@
   device_class: energy
   address: 929
   input_type: input
-  state_class: measurement
+  state_class: total_increasing
   scan_interval: 60
   slave: 1
 
@@ -390,7 +390,7 @@
   device_class: energy
   address: 809
   input_type: input
-  state_class: measurement
+  state_class: total_increasing
   scan_interval: 60
   slave: 1
 
